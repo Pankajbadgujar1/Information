@@ -5,7 +5,28 @@ from django.contrib import messages
 # Create your views here.
 
 def homePage(request):
+    
+    
     return render(request, 'users/homepage.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def Teacher_login(request):
     print("login")

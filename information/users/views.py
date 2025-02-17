@@ -4,26 +4,18 @@ from django.contrib import messages
 
 # Create your views here.
 
+
+def dashboard(request):
+
+ return render(request, 'users/dashboard.html')
+
+
+
+
 def homePage(request):
-    
+
     
     return render(request, 'users/homepage.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -45,7 +37,7 @@ def Teacher_login(request):
                 print("if")
                 #request.session['user_id '] = teacher.id
                 #login(request, teacher)
-                return redirect('HomePage')
+                return redirect('Dashboard')
             else:
                 messages.error(request, 'Invalid username or password')
         except:

@@ -1,10 +1,150 @@
-<html>
+<!DOCTYPE html>
 
-<body>
-    <div class="login-container">
-        <div class="login-header">
-            <h1>Kavayitri Bahinabai Chaudhari North Maharashtra University</h1>
-            <h2>Teacher Login</h2>
-        </div>
-    </div>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/users/homecss.css">
+
+        <header>
+            <h2>Kavayitri Bahinabai Chaudhari North Maharashtra University</h2>
+                <h1>School Of Computer Science</h1>
+        </header>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            nav{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li{
+                display: inline;
+                margin: 0 10px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            header{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+            main{
+                padding: 20px;
+            }
+            imageslider{
+                width: 70%;
+                height: 400px;
+                overflow: hidden;
+            }
+            imageslider img{
+                width: 100%;
+                height: 400px;
+                object-fit: auto;
+            }
+            aside{
+                background-color: #f4f4f4;
+                padding: 20px;
+                margin: 20px;
+            }
+            footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+            {% comment %} <div class="imageslider">
+                <img src="/static/users/images/image3.jpg" alt="image1">
+                <img src="/static/users/images/image3.jpg" alt="image2">
+                <img src="/static/users/images/image3.jpg" alt="image3">
+                <img src="/static/users/images/image3.jpg" alt="image4">
+                <img src="/static/users/images/image3.jpg" alt="image5">
+            </div> {% endcomment %}
+            <div class="imageslider">
+                <div class="slides">
+                    <img src="/static/users/images/image3.jpg" alt="image1">
+                    <img src="/static/users/images/image3.jpg" alt="image2">
+                    <img src="/static/users/images/image3.jpg" alt="image3">
+                    <img src="/static/users/images/image3.jpg" alt="image4">
+                    <img src="/static/users/images/image3.jpg" alt="image5">
+                </div>
+            </div>
+
+            <style>
+                .imageslider {
+                    position: left;
+                    width: 70%;
+                    max-width: 1000px;
+                    margin: 0%;
+                    overflow: hidden;
+                }
+                .slides {
+                    display: flex;
+                    width: 500%;
+                    animation: slide 10s infinite;
+                }
+                .slides img {
+                    width: 20%;
+                    transition: transform 0.5s ease;
+                }
+                @keyframes slide {
+                    0% { transform: translateX(0); }
+                    20% { transform: translateX(0); }
+                    25% { transform: translateX(-20%); }
+                    45% { transform: translateX(-20%); }
+                    50% { transform: translateX(-40%); }
+                    70% { transform: translateX(-40%); }
+                    75% { transform: translateX(-60%); }
+                    95% { transform: translateX(-60%); }
+                    100% { transform: translateX(-80%); }
+                }
+            </style>
+
+            
+        </main>
+
+        <aside>
+            <h2>Notice Board</h2>
+            <p>Notice 1</p>
+            <p>Notice 2</p>
+            <p>Notice 3</p>
+            <p>Notice 4</p>
+            <p>Notice 5</p>
+        </aside>
+        <script src="" async defer></script>
+    </body>
+    <footer>
+        <p>© 2025 School Of Computer Science,KBCNMU. All Rights Reserved.</p>
+    </footer>
 </html>

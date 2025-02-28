@@ -131,7 +131,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pankajbadgujar799@gmail.com'
-EMAIL_HOST_PASSWORD = 'bADGUJAR@123'
+EMAIL_HOST_PASSWORD = 'wbwl rxiw iyiz ssbj'
 # Compare this snippet from information/users/forms.py:
 DEFAULT_FORM_EMAIL = 'EMAIL_HOST_USER'
 # Compare this snippet from information/users/forms.py:

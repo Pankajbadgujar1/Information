@@ -5,6 +5,7 @@ from .forms import UserRegisterForm
 
 # Create your views here.
 
+
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -13,7 +14,7 @@ def register(request):
             user.is_approved = False
             user.save()
             messages.success(request, 'Your account has been created!  Wait for admin approval')
-            return redirect('login')
+            return redirect('Teacher_login')
     else:
         form = UserRegisterForm()
         print("else")

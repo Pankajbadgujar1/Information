@@ -122,3 +122,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.customUser' #This is used to swap the default user model with custom user model
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'pankajbadgujar799@gmail.com'
+EMAIL_HOST_PASSWORD = 'bADGUJAR@123'
+# Compare this snippet from information/users/forms.py:
+DEFAULT_FORM_EMAIL = 'EMAIL_HOST_USER'
+# Compare this snippet from information/users/forms.py:

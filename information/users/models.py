@@ -1,8 +1,15 @@
 from django.db import models
 
 from django.contrib.auth.hashers import make_password, check_password   
-
+from django.contrib.auth.models import AbstractUser
+from django.db import models
 # Create your models here.
+
+class customUser(AbstractUser):
+    is_approved = models.BooleanField(default=False) #Admin approval filed
+
+    class Meta:
+        swappable = 'AUTH_USER_MODEL' #This is used to swap the default user model with custom user model
 
 class Teachers(models.Model):
     T_name = models.CharField(max_length=100)
